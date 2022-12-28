@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    /* background-color: rgba(243, 159, 120, 0.903); */
+    /* background: url(bg3.jpg); */
+}
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    height: 46px; 
+    background-color: #000;
+}
+
+#nav {
+   
+    margin-bottom: 0px;
+    position: absolute;
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+}  
+
+#nav li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 46px;
+    display: block;
+}
+
+#nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#header .download {
+    font-weight: 500;
+    float: right;
+    color: white;
+    background-color: #007bff;
+    display: block;
+    padding: 3px;
+    margin: 3px 15px 3px;
+    border-radius: 6px;
+}
+
+#header .download:hover {
+    background-color: rgb(219, 31, 31);
+    color: #000;
+}
+
+/*  */
+#about-me {
+    margin-top: 46px;
+    padding-top: 50%;
+    width: 100%;
+    background: url(../img/bg2.jpg) center / cover no-repeat;
+    position: relative;
+}
+    
+#about-me .text{
+    position: absolute;
+    bottom: 35%;
+    left: 15%;
+}
+
+#about-me .hello {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+#about-me .name {
+    font-family: Georgia, serif;
+    font-size: 90px;
+    letter-spacing: 5px;
+    
+}
+
+#about-me p {
+    font-style: italic;
+    color: rgba(123, 107, 123, 0.818);
+}
+
+
+#about-me .summary {
+    float: left;
+    text-align: justify;
+    transform: translateX(-50%);
+    width: 600px;
+    margin: 50px 50%;
+} 
+
+#about-me .summary p {
+    font-style: normal;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+
+h3 {
+    /* color: rgba(114, 54, 216, 0.818); */
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* timeline */
+#experience {
+    /* background-color: #c28368; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 150px;
+}
+
+#experience .staple{
+    top: 0;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: -80%;
+}
+
+#experience .container {
+    min-height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 12%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: #fff;
+    /* border-radius: 55px; */
+    box-shadow: #c28368 5px 5px, #d08d71 10px 10px, #e99d7c 15px 15px, #ffae8c 20px 20px, #ffcbb4 25px 25px;
+    position: relative;
+    border: 6px solid #ac7964;
+}
+
+#experience .container .h1 {
+    top: 0;
+    position: absolute;
+    margin-top: 80px;
+    /* color: rgb(208, 72, 228); */
+}
+
+#timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* #timeline .timeline-content {
+    border-color: 2px solid yellowgreen;
+} */
+
+#timeline ul {
+    list-style: none;
+}
+
+#timeline ul li {
+    padding: 16px;
+    border: 2px dashed #e57373;
+    margin-bottom: 20px;
+}
+
+#timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+#timeline .timeline-content h1 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+#timeline .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+#timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c28368;
+}
+
+#timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#timeline ul li:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+#timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0 20px 20px;
+}
+
+#timeline ul li:nth-child(odd)::after {
+    transform: translate(59%, -50%);;
+    right: -30px;
+}
+
+#timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0 20px 20px;
+}
+
+#timeline ul li:nth-child(even)::after {
+    transform: translate(-58%, -50%);
+    left: -30px;
+}
+
+#timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #e57373;
+    border-radius: 50%;
+    top: 0;
+}
+
+/* portfolio */
+#portfolio {
+    margin-top: 200px;
+    
+}
+
+#portfolio .head {
+    margin-left: 12%;
+}
+
+#portfolio .head p {
+    padding: 10px;
+}
+
+.container-2 {
+    /* background-color: #c28368; */
+    padding: 6% 16%;
+}
+
+.container-2 .box {
+    background-color: #c28368;
+    padding: 25px 80px;
+    margin-bottom: 80px;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 30%); */
+}
+
+.container-2 .box .left {
+    width: 375px;
+    height: 321px;
+    float: left;
+    /* border-right: 5px solid #ff7b49; */
+    /* margin-right: 25px; */
+    /* padding: 0 39px; */
+}
+
+.container-2 .box .left h3 {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.container-2 .box .left p {
+    margin-bottom: 38px;
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 25px;
+}
+
+.container-2 .box .rigth {
+    width: 320px;
+    float: right;
+}
+
+/* contact */
+#contact {
+    /* padding-top: 50%; */
+    margin: 5% 18%;
+    height: 70%;
+    /* background-color: #e5cf73; */
+    border: 7px solid #ee7f4f;
+}
+
+#contact .descrip {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#contact .contact-form {
+    margin: 20px 40px;
+}
+
+#contact .contact-form #btn{
+    float: right;
+    margin: 10px 35px
+}
+
+#footer {
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    /* text-align: center; */
+    border-top: 2px solid #dcdcdcab;
+    box-shadow: 0 0 2px #dcdcdcab
+}
+
+#footer .copyright {
+    float: left;
+    margin-left: 30px;
+}
+
+#footer .icon-link {
+    float: right;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+#footer .icon-link a {
+    text-decoration: none;
+    color: rgb(121, 174, 188);
+    margin: 0 3px;
+}
